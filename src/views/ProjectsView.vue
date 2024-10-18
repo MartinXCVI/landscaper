@@ -6,12 +6,12 @@
 </script>
 
 <template>
-  <HeroHeader class="home-bg">
+  <HeroHeader class="projects-bg">
     <Header>
       <Logo />
       <Navbar />
     </Header>
   </HeroHeader>
   
-  <h1>Hello from Home</h1>
+  <h1>Hello from Projects</h1>
 </template>

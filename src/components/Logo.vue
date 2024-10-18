@@ -1,0 +1,5 @@
+<template>
+  <div class="logo-div">
+    <h1><a href="/" class="logo-link">LOGO</a></h1>
+  </div>
+</template>

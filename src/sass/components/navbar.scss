@@ -1,0 +1,75 @@
+@use '../includes/colors' as color;
+@use '../includes/mixins' as mx;
+@use '../includes/typography' as font;
+@use '../includes/variables' as var;
+@use '../includes/classes';
+
+.navbar {
+  min-width: 50%;
+  @include mx.flexRow(center, center);
+  position: relative;
+  top: 0;
+}
+
+.nav-list {
+  min-width: 100%;
+  @include mx.flexRow(var.$evenly, center);
+  .nav-item {
+    padding: 1rem;
+    .nav-link {
+      font-family: font.$textFont;
+      color: color.$white;
+      text-shadow: 0 0 0.25rem color.$black;
+      padding: 1rem;
+    }
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+  .nav-list {
+    .nav-item {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  .nav-list {
+    @include mx.flexCol(center, center);
+  }
+}
+
+@media all and (min-width: 992px) {
+
+  .nav-list {
+    .nav-item {
+      .nav-link {
+        position: relative;
+        &::before {
+          width: 0;
+          content: '';
+          position: absolute;
+          background-color: color.$secondColor;
+          height: 0.1rem;
+          right: 50%;
+          bottom: 0.5rem;
+          transition: var.$trs02;
+        }
+        &::after {
+          width: 0;
+          content: '';
+          position: absolute;
+          background-color: color.$secondColor;
+          height: 0.1rem;
+          left: 50%;
+          bottom: 0.5rem;
+          transition: var.$trs02;
+        }
+        &:hover::after, &:hover::before {
+          width: 40%;
+        }
+      }
+    }
+  }
+}

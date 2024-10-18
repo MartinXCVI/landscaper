@@ -1,0 +1,5 @@
+<template>
+  <div class="ham-container">
+    <i class="fa-solid fa-bars ham-icon"></i>
+  </div>
+</template>

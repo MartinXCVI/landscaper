@@ -1,0 +1,15 @@
+@use '../includes/colors' as color;
+@use '../includes/mixins' as mx;
+@use '../includes/typography' as font;
+@use '../includes/variables' as var;
+@use '../includes/classes';
+
+.services-bg {
+  position: relative;
+  &::before {
+    @include mx.bgColor(-10, color.$black, 1);
+  }
+  &::after {
+    @include mx.bgHeroImg(-5, '/images/services-bg.jpg', 1);
+  }
+}

@@ -1,6 +1,7 @@
 /*----- Global -----*/
 @use './global.scss';
 
+
 /*----- Includes -----*/
 @use './includes/classes';
 @use './includes/colors';
@@ -8,11 +9,21 @@
 @use './includes/typography';
 @use './includes/variables';
 
-/*----- Components -----*/
 
-// For components
+/*----- Components -----*/
+@use './components/heroHeader.scss';
+@use './components/header.scss';
+@use './components/navbar.scss';
+@use './components/logo.scss';
+@use './components/ham.scss';
+
 
 /*----- Views -----*/
+@use './views/homeView.scss';
+@use './views/aboutView.scss';
+@use './views/projectsView.scss';
+@use './views/servicesView.scss';
+@use './views/contactView.scss';
 
 // For views
 
