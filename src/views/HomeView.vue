@@ -8,10 +8,10 @@
   <HeroHeader class="home-bg">
     <Header>
       <Navbar />
-      <h1 class="header-title">Company Name</h1>
-      <h2 class="header-subtitle">Effective Design</h2>
-      <a href="#" class="header-btn button">Get started</a>
     </Header>
+    <h1 class="header-title">Company Name</h1>
+    <h2 class="header-subtitle">Effective Design</h2>
+    <a href="#" class="header-btn button">Get started</a>
   </HeroHeader>
   
 </template>

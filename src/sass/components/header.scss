@@ -6,34 +6,16 @@
 
 .header-element {
   width: 100%;
-  min-height: 100vh;
-  @include mx.flexColCenter();
-  position: relative;
+  position: absolute;
   box-shadow: inset 0 3rem 2.5em 0 rgba(0, 0, 0, 0.4);
   padding: 1rem 2rem;
-  .header-title {
-    font-size: 3rem;
-    color: color.$white;
-    @include mx.textShadow();
-    margin-bottom: 1rem;
-  }
-  .header-subtitle {
-    font-size: 2.5rem;
-    color: color.$white;
-    @include mx.textShadow();
-    font-family: font.$textFont;
-    font-weight: 200;
-    margin-bottom: 1rem;
-  }
-  .header-btn {
-    background-color: color.$firstColor;
-  }
+  top: 0;
 }
 
 @media all and (max-width: 991px) {
+
   .header-element {
-    @include mx.flexRow(var.$between, center);
-    position: relative;
+    @include mx.flexRow(flex-start, flex-start);
     .navbar {
       min-width: 100%;
       height: 0vh;
@@ -99,17 +81,10 @@
   }
 }
 
-.header-element {
-  .logo-div {
-    h1 a {
-      color: color.$white;
-      text-shadow: 0 0 0.25rem color.$black;
-    }
-  }
-}
 
 @media all and (min-width: 992px) {
   .header-element {
+    @include mx.flexColCenter();
     .navbar {
       height: min-content;
       min-height: unset !important;

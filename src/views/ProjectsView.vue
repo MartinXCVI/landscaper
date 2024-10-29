@@ -9,6 +9,7 @@
     <Header>
       <Navbar />
     </Header>
+    <h1 class="header-title">See Our Projects</h1>
   </HeroHeader>
   
   <h1>Hello from Projects</h1>

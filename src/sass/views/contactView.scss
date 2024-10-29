@@ -10,7 +10,16 @@
     @include mx.bgColor(-10, color.$black, 1);
   }
   &::after {
-    @include mx.bgHeroImg(-5, '/images/contact-bg.jpg', 1);
+    @include mx.bgHeroImg(-5, '/images/contact-bg.jpg', 0.9);
     background-position: 25% 65%;
+  }
+}
+
+
+@media all and (max-width: 991px) {
+  .contact-bg {
+    &::after {
+      background-position: 35% 50%;
+    }
   }
 }

@@ -4,9 +4,54 @@
 @use '../includes/variables' as var;
 @use '../includes/classes';
 
+
 .hero-header {
   width: 100%;
   min-height: 100vh;
-  // @include mx.flexCol(var.$between, center);
-  
+  @include mx.flexCol(center, center);
+  position: relative;
+  .header-title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: color.$white;
+    @include mx.textShadow();
+    margin-bottom: 0.25rem;
+    text-align: center;
+  }
+  .header-subtitle {
+    font-size: 2.5rem;
+    color: color.$white;
+    @include mx.textShadow();
+    font-family: font.$textFont;
+    font-weight: 200;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .header-btn {
+    background-color: color.$firstColor;
+  }
+}
+
+@media all and (max-width: 767px) {
+
+  .hero-header {
+    .header-title {
+      font-size: 2.25rem;
+    }
+    .header-subtitle {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+  .hero-header {
+    .header-title {
+      font-size: 2.75rem;
+    }
+    .header-subtitle {
+      font-size: 2.25rem;
+    }
+  }
 }

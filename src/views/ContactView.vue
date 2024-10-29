@@ -9,6 +9,7 @@
     <Header>
       <Navbar />
     </Header>
+    <h1 class="header-title">Contact Us</h1>
   </HeroHeader>
   
   <h1>Hello from Contact</h1>

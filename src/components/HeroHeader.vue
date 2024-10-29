@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <section class="hero-header" :class="{bgclass}">
+  <section class="hero-header">
     <slot></slot>
   </section>
 </template>

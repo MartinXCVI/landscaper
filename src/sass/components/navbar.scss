@@ -7,8 +7,6 @@
 .navbar {
   min-width: 50%;
   @include mx.flexRow(center, center);
-  position: absolute;
-  top: 0;
 }
 
 .nav-list {
