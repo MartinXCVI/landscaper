@@ -2,16 +2,16 @@
   import HeroHeader from '@/components/HeroHeader.vue';
   import Header from '@/components/Header.vue';
   import Navbar from '@/components/Navbar.vue';
-  import Logo from '@/components/Logo.vue';
 </script>
 
 <template>
   <HeroHeader class="home-bg">
     <Header>
-      <Logo />
       <Navbar />
+      <h1 class="header-title">Company Name</h1>
+      <h2 class="header-subtitle">Effective Design</h2>
+      <a href="#" class="header-btn button">Get started</a>
     </Header>
   </HeroHeader>
   
-  <h1>Hello from Home</h1>
 </template>
