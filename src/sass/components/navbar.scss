@@ -9,6 +9,7 @@
   @include mx.flexRow(center, center);
 }
 
+
 .nav-list {
   min-width: 100%;
   @include mx.flexRow(var.$evenly, center);
@@ -33,6 +34,31 @@
 }
 
 @media all and (max-width: 991px) {
+
+  .navbar {
+    .close-container {
+      position: fixed;
+      top: 8%;
+      right: 25%;
+      z-index: 100;
+      .close-icon {
+        position: relative;
+        z-index: 101;
+        cursor: pointer;
+        padding: 0.75rem 1rem;
+        border: 2px solid color.$white;
+        border-radius: 100%;
+        color: color.$white;
+        font-size: 1.5rem;
+        transition: 1s linear all;
+        &:hover {
+          border-color: color.$secondColor;
+          color: color.$secondColor;
+        }
+      }
+    }
+  }
+
   .nav-list {
     @include mx.flexCol(center, center);
   }

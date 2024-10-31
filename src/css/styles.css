@@ -202,7 +202,7 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.3;
+    opacity: 0.5;
   }
   .header-element .navbar::after {
     content: "";
@@ -237,26 +237,9 @@ button {
     color: #42b883;
     text-shadow: 0 0 0;
   }
-  .header-element .navbar .close-container {
-    position: fixed;
-    top: 8%;
-    right: 25%;
-    z-index: 100;
-  }
-  .header-element .navbar .close-container .close-icon {
-    cursor: pointer;
-    padding: 0.75rem 1rem;
-    border: 1px solid #fdfdfd;
-    border-radius: 100%;
-    color: #fdfdfd;
-    font-size: 1.5rem;
-    transition: 1s linear all;
-    opacity: 0;
-  }
-  .header-element .navbar .close-container .close-icon:hover {
-    background-color: #fdfdfd;
-    color: #151515;
-    transition: 0.3s linear all;
+  .header-element .show-navbar {
+    height: 100vh;
+    min-height: 100vh;
   }
 }
 @media all and (min-width: 992px) {
@@ -304,6 +287,27 @@ button {
   }
 }
 @media all and (max-width: 991px) {
+  .navbar .close-container {
+    position: fixed;
+    top: 8%;
+    right: 25%;
+    z-index: 100;
+  }
+  .navbar .close-container .close-icon {
+    position: relative;
+    z-index: 101;
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    border: 2px solid #fdfdfd;
+    border-radius: 100%;
+    color: #fdfdfd;
+    font-size: 1.5rem;
+    transition: 1s linear all;
+  }
+  .navbar .close-container .close-icon:hover {
+    border-color: #42b883;
+    color: #42b883;
+  }
   .nav-list {
     display: flex;
     flex-direction: column;
@@ -370,7 +374,7 @@ button {
   .ham-container .ham-icon {
     cursor: pointer;
     font-size: 1.5rem;
-    border: 1px solid #fdfdfd;
+    border: 2px solid #fdfdfd;
     color: #fdfdfd;
     padding: 0.75rem 0.9rem;
     border-radius: 100%;
