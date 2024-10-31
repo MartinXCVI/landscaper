@@ -68,15 +68,23 @@ button {
   text-align: center;
 }
 
+.text-grey {
+  color: #808080;
+}
+
+.text-black {
+  color: #151515;
+}
+
 .title {
   font-family: "Libre Baskerville", serif;
-  font-size: 3rem;
+  font-size: 2.25rem;
   letter-spacing: 0.25vw;
 }
 
 .subtitle {
   font-family: "Libre Baskerville", serif;
-  font-size: 2.75rem;
+  font-size: 1.75rem;
   letter-spacing: 0.1vw;
 }
 
@@ -401,6 +409,254 @@ button {
   opacity: 0.7;
 }
 
+.home-landing {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2.5rem;
+}
+
+.home-intro {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.home-intro .first-separator {
+  transform: rotate(180deg);
+}
+.home-intro .home-intro-box {
+  width: 75%;
+  padding-block: 3rem;
+}
+.home-intro .home-intro-box .title {
+  margin-bottom: 1rem;
+}
+.home-intro .separator-fig {
+  width: 40%;
+}
+
+.separator-fig {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.separator-fig img {
+  width: 100%;
+}
+
+.article-container article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-inline: 5rem;
+  gap: 1rem;
+}
+
+.home-columns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 4rem;
+}
+.home-columns .home-first-column {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-columns .home-first-column figure {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-columns .home-first-column figure img {
+  width: 100%;
+}
+.home-columns .home-first-column .article-container {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-columns .home-first-column .article-container article {
+  border-right: 3px solid #007777;
+  margin-block: 5rem;
+}
+
+.home-columns .home-second-column {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-columns .home-second-column .article-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-columns .home-second-column .article-container .subtitle {
+  width: 75%;
+  margin-bottom: 2rem;
+  border-right: 3px solid #007777;
+  padding-bottom: 1.5rem;
+}
+.home-columns .home-second-column .article-container article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-left: 3px solid #007777;
+  padding-inline: 1rem;
+}
+.home-columns .home-second-column .article-container article .article-box {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem;
+}
+.home-columns .home-second-column .article-container article .article-card {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 5rem 2rem;
+  object-fit: cover;
+  background-color: #f2f2f2;
+  border-bottom: 5px solid #007777;
+}
+.home-columns .home-second-column .article-container article .article-card i {
+  width: 6rem;
+  height: 6rem;
+  line-height: 6rem;
+  font-size: 3.5rem;
+  color: #007777;
+  border-radius: 3rem;
+  background-color: #fdfdfd;
+}
+.home-columns .home-second-column .article-container article .article-card p {
+  font-size: 1.1rem;
+}
+
+.home-columns .home-second-column figure {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-columns .home-second-column figure img {
+  width: 100%;
+}
+
+.home-columns .subcontainer-top {
+  width: 100%;
+}
+.home-columns .subcontainer-top .inner-subcontainer-top {
+  width: 50%;
+  height: 4rem;
+  border-top: 3px solid #007777;
+}
+.home-columns .subcontainer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.home-columns .subcontainer-bottom .inner-subcontainer-bottom {
+  width: 50%;
+  height: 4rem;
+  border-bottom: 3px solid #007777;
+}
+
+.learn-icon {
+  color: #007777;
+}
+
+/*----------- BREAKPOINTS -----------*/
+@media all and (max-width: 575px) {
+  .home-landing {
+    padding: 2rem 1rem;
+  }
+  .home-intro .home-intro-box {
+    width: 100%;
+  }
+}
+@media all and (min-width: 576px) and (max-width: 991px) {
+  .home-landing {
+    padding: 3rem 2rem;
+  }
+  .home-intro .home-intro-box {
+    width: 80%;
+  }
+}
+@media all and (max-width: 991px) {
+  .home-columns .home-first-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .home-columns .home-first-column figure {
+    width: 100%;
+  }
+  .home-columns .home-first-column .article-container {
+    width: 100%;
+  }
+  .home-columns .home-first-column .article-container article {
+    padding-inline: 0;
+    padding-right: 0.5rem;
+  }
+  .home-columns .home-second-column {
+    flex-direction: column-reverse;
+  }
+  .home-columns .home-second-column figure {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .home-columns .home-second-column .article-container {
+    width: 100%;
+  }
+  .home-columns .home-second-column .article-container .subtitle {
+    width: 100%;
+  }
+  .home-columns .home-second-column .article-container article {
+    flex-direction: column;
+    border-left: 0;
+    padding-inline: 0;
+  }
+  .home-columns .home-second-column .article-container article .article-box {
+    width: 100%;
+    padding: 2rem 0rem;
+    border-left: 3px solid #007777;
+    padding-left: 1rem;
+  }
+  .home-columns .home-second-column .article-container article .article-card {
+    width: 100%;
+  }
+}
 /*----- Includes -----*/
 .about-bg {
   position: relative;

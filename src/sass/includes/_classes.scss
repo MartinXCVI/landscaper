@@ -1,4 +1,5 @@
 @use './typography' as font;
+@use './colors' as color;
 
 .container {
   width: 100%;
@@ -11,15 +12,23 @@
   text-align: center;
 }
 
+.text-grey {
+  color: color.$grey;
+}
+
+.text-black {
+  color: color.$black;
+}
+
 .title {
   font-family: font.$titleFont;
-  font-size: 3rem;
+  font-size: 2.25rem;
   letter-spacing: 0.25vw;
 }
 
 .subtitle {
   font-family: font.$titleFont;
-  font-size: 2.75rem;
+  font-size: 1.75rem;
   letter-spacing: 0.10vw;
 }
 

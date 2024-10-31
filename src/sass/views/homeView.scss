@@ -13,3 +13,240 @@
     @include mx.bgHeroImg(-5, '/images/home-bg.jpg', 0.7);
   }
 }
+
+.home-landing {
+  width: 100%;
+  @include mx.flexColCenter();
+  padding: 4rem 2.5rem;
+}
+
+.home-intro {
+  width: 100%;
+  min-height: 100vh;
+  @include mx.flexColCenter();
+  text-align: center;
+  gap: 1rem;
+  .first-separator {
+    transform: rotate(180deg);
+  }
+  .home-intro-box {
+    width: 75%;
+    padding-block: 3rem;
+    .title {
+      margin-bottom: 1rem;
+    }
+  }
+  .separator-fig {
+    width: 40%;
+  }
+}
+
+.separator-fig {
+  width: 100%;
+  @include mx.flexColCenter();
+  img {
+    width: 100%;
+  }
+}
+
+.article-container article {
+  @include mx.flexCol(flex-start, flex-start);
+  padding-inline: 5rem;
+  gap: 1rem;
+}
+
+.home-columns {
+  width: 100%;
+  @include mx.flexColCenter();
+  padding-block: 4rem;
+  .home-first-column {
+    width: 100%;
+    @include mx.flexRowCenter();
+    figure {
+      width: 60%;
+      @include mx.flexColCenter();
+      img {
+        width: 100%;
+      }
+    }
+    .article-container {
+      width: 40%;
+      @include mx.flexRowCenter();
+      article {
+        border-right: 3px solid color.$firstColor;
+        margin-block: 5rem;
+      }
+    }
+  }
+}
+
+.home-columns {
+  .home-second-column {
+    width: 100%;
+    @include mx.flexRowCenter();
+    .article-container {
+      width: 60%;
+      @include mx.flexColCenter();
+      .subtitle {
+        width: 75%;
+        margin-bottom: 2rem;
+        border-right: 3px solid color.$firstColor;
+        padding-bottom: 1.5rem;
+      }
+      article {
+        @include mx.flexRowCenter();
+        flex-direction: row;
+        border-left: 3px solid color.$firstColor;
+        padding-inline: 1rem;
+        .article-box {
+          width: 45%;
+          @include mx.flexCol(flex-start, flex-start);
+          gap: 1rem;
+          padding: 2rem;
+        }
+        .article-card {
+          width: 45%;
+          @include mx.flexColCenter();
+          text-align: center;
+          gap: 1rem;
+          padding: 5rem 2rem;
+          object-fit: cover;
+          background-color: color.$whiteSnow;
+          border-bottom: 5px solid color.$firstColor;
+          i {
+            width: 6rem;
+            height: 6rem;
+            line-height: 6rem;
+            font-size: 3.5rem;
+            color: color.$firstColor;
+            // padding: 1rem;
+            border-radius: 3rem;
+            background-color: color.$white;
+          }
+          p {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }  
+  }
+}
+
+.home-columns {
+  .home-second-column {
+    figure {
+      width: 40%;
+      @include mx.flexColCenter();
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.home-columns {
+  .subcontainer-top {
+    width: 100%;
+    .inner-subcontainer-top {
+      width: 50%;
+      height: 4rem;
+      border-top: 3px solid color.$firstColor;
+    }
+  }
+
+  .subcontainer-bottom {
+    width: 100%;
+    @include mx.flexRow(flex-end, center);
+    .inner-subcontainer-bottom {
+      width: 50%;
+      height: 4rem;
+      border-bottom: 3px solid color.$firstColor;
+    }
+  }
+}
+
+.learn-icon {
+  color: color.$firstColor;
+}
+
+
+/*----------- BREAKPOINTS -----------*/
+
+
+@media all and (max-width: 575px) {
+
+  .home-landing {
+    padding: 2rem 1rem;
+  }
+
+  .home-intro {
+    .home-intro-box {
+      width: 100%;
+    }
+  }
+}
+
+@media all and (min-width: 576px) and (max-width: 991px) {
+
+  .home-landing {
+    padding: 3rem 2rem;
+  }
+
+  .home-intro {
+    .home-intro-box {
+      width: 80%;
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+
+  .home-columns {
+    .home-first-column {
+      @include mx.flexColCenter();
+      margin-bottom: 2rem;
+      figure {
+        width: 100%;
+      }
+      .article-container {
+        width: 100%;
+        article {
+          padding-inline: 0;
+          padding-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .home-columns {
+    .home-second-column {
+      flex-direction: column-reverse;
+      figure {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+      .article-container {
+        width: 100%;
+        .subtitle {
+          width: 100%;
+        }
+        article {
+          flex-direction: column;
+          border-left: 0;
+          padding-inline: 0;
+          .article-box {
+            width: 100%;
+            padding: 2rem 0rem;
+            border-left: 3px solid color.$firstColor;
+            padding-left: 1rem;
+          }
+          .article-card {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+
+}
