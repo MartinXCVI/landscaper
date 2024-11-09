@@ -574,21 +574,22 @@ button {
   width: 100%;
 }
 
-.home-columns .subcontainer-top {
+.subcontainer-left {
   width: 100%;
 }
-.home-columns .subcontainer-top .inner-subcontainer-top {
+.subcontainer-left .inner-subcontainer-left {
   width: 50%;
   height: 4rem;
   border-top: 3px solid #007777;
 }
-.home-columns .subcontainer-bottom {
+
+.subcontainer-right {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.home-columns .subcontainer-bottom .inner-subcontainer-bottom {
+.subcontainer-right .inner-subcontainer-right {
   width: 50%;
   height: 4rem;
   border-bottom: 3px solid #007777;
@@ -596,6 +597,38 @@ button {
 
 .learn-icon {
   color: #007777;
+}
+
+.home-services-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2.5rem;
+}
+.home-services-section .title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.home-services-section .home-services {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.home-services-section .subcontainer-right .inner-subcontainer-right {
+  width: 35%;
+  border-top: 3px solid #007777;
+  border-bottom: 0px;
+}
+.home-services-section .subcontainer-left .inner-subcontainer-left {
+  width: 35%;
+  border-top: 0px;
+  border-bottom: 3px solid #007777;
 }
 
 /*----------- BREAKPOINTS -----------*/

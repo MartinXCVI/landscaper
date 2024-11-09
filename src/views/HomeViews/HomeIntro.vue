@@ -17,8 +17,8 @@
     </section>
 
     <section class="home-columns">
-      <section class="subcontainer-top">
-        <section class="inner-subcontainer-top">
+      <section class="subcontainer-left">
+        <section class="inner-subcontainer-left">
         </section>
       </section>
       <section class="home-first-column">
@@ -57,8 +57,8 @@
         </figure>
       </section>
 
-      <section class="subcontainer-bottom">
-        <section class="inner-subcontainer-bottom">
+      <section class="subcontainer-right">
+        <section class="inner-subcontainer-right">
         </section>
       </section>
 

@@ -2,6 +2,7 @@
   import HeroHeader from '@/components/HeroHeader.vue';
   import HomeIntro from '@/views/HomeViews/HomeIntro.vue';
   import HomeSlider from '@/views/HomeViews/HomeSlider.vue';
+  import HomeServices from './HomeViews/HomeServices.vue';
 </script>
 
 <template>
@@ -12,4 +13,5 @@
   </HeroHeader>
   <HomeIntro />
   <HomeSlider />
+  <HomeServices />
 </template>
