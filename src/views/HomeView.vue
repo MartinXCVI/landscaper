@@ -3,7 +3,8 @@
   import HomeIntro from '@/views/HomeViews/HomeIntro.vue';
   import HomeSlider from '@/views/HomeViews/HomeSlider.vue';
   import HomeServices from './HomeViews/HomeServices.vue';
-import HomeContact from './HomeViews/HomeContact.vue';
+  import HomeContact from './HomeViews/HomeContact.vue';
+  import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
@@ -16,4 +17,5 @@ import HomeContact from './HomeViews/HomeContact.vue';
   <HomeSlider />
   <HomeServices />
   <HomeContact />
+  <Footer />
 </template>

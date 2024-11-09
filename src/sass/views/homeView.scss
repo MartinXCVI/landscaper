@@ -187,7 +187,7 @@
   .subcontainer-right {
     .inner-subcontainer-right {
       width: 35%;
-      border-top: 3px solid #007777;
+      border-top: 3px solid color.$firstColor;
       border-bottom: 0px;
     }
   }
@@ -195,7 +195,7 @@
     .inner-subcontainer-left {
       width: 35%;
       border-top: 0px;
-      border-bottom: 3px solid #007777;
+      border-bottom: 3px solid color.$firstColor;
     }
   }
 }

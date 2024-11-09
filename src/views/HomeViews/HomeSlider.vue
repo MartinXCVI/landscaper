@@ -56,7 +56,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(145deg, rgba(0,119,119,0.6) 0%, rgba(239,239,239,1) 20%, rgba(211,211,211,1) 40%, rgba(211,211,211,1) 60%, rgba(239,239,239,1) 80%, rgba(0,119,119,0.6) 100%);
+  background: linear-gradient(145deg, rgba(53, 78, 51, 0.6) 0%, rgba(239,239,239,1) 20%, rgba(211,211,211,1) 40%, rgba(211,211,211,1) 60%, rgba(239,239,239,1) 80%, rgba(53, 78, 51, 0.6));
   padding: 3rem 2rem;
   gap: 1.5rem;
 }
@@ -70,7 +70,7 @@
   gap: 0.75rem;
   .line {
     width: 100%;
-    border-bottom: 3px solid #007777;
+    border-bottom: 3px solid #354e33;
     margin-bottom: 1rem;
   }
 }
@@ -188,12 +188,12 @@
   text-shadow: 0 0 0.25rem darkgray;
   box-shadow: 0 0 0.25rem darkgray;
   font-size: 1.25rem;
-  background-color: #007777;
+  background-color: #354e33;
   color: white;
   transition: 300ms;
   &:hover {
-    background-color: #65d1a0;
-    color: #007777;
+    background-color: #487c44;
+    color: black;
   }
 }
 

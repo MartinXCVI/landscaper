@@ -25,8 +25,8 @@
     flex-direction: column;
     gap: 1.5rem;
     position: relative;
-    border: 2px solid #007777;
-    border-left: 6px solid #007777;
+    border: 2px solid #354e33;
+    border-left: 6px solid #354e33;
     background-color: #fdfdfd;
     border-radius: 1rem;
     padding: 1.5rem;
@@ -38,12 +38,12 @@
       top: 5%;
       left: -5%;
       z-index: -5;
-      border: 2px solid #007777;
-      border-left: 5px solid #007777;
+      border: 2px solid #354e33;
+      border-left: 5px solid #354e33;
       border-radius: 1rem;
     }
     .icon {
-      color: #007777;
+      color: #354e33;
       position: absolute;
       top: 7%;
       right: 7%;
