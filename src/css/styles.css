@@ -631,12 +631,74 @@ button {
   border-bottom: 3px solid #007777;
 }
 
+.home-contact-section {
+  width: 100%;
+  min-height: 85vh;
+  padding: 4rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.home-contact-section::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background-image: url("/images/home-contact-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  background-attachment: fixed;
+}
+.home-contact-section::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -3;
+  background: #202020;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+}
+.home-contact-section .home-contact {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.home-contact-section .home-contact .subtitle {
+  font-size: 2rem;
+}
+.home-contact-section .home-contact .subtitle, .home-contact-section .home-contact .text {
+  color: #fdfdfd;
+  text-align: center;
+  text-shadow: 0 0 0.5rem #151515;
+}
+.home-contact-section .home-contact .text {
+  font-size: 1.5rem;
+}
+.home-contact-section .home-contact a {
+  color: #fdfdfd;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  border: 1px solid #fdfdfd;
+}
+
 /*----------- BREAKPOINTS -----------*/
 @media all and (max-width: 575px) {
   .home-landing {
     padding: 2rem 1rem;
   }
   .home-intro .home-intro-box {
+    width: 100%;
+  }
+  .home-contact-section .home-contact {
     width: 100%;
   }
 }
@@ -646,6 +708,9 @@ button {
   }
   .home-intro .home-intro-box {
     width: 80%;
+  }
+  .home-contact-section .home-contact {
+    width: 75%;
   }
 }
 @media all and (max-width: 991px) {

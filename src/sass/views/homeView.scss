@@ -200,6 +200,43 @@
   }
 }
 
+.home-contact-section {
+  width: 100%;
+  min-height: 85vh;
+  padding: 4rem 2.5rem;
+  @include mx.flexColCenter();
+  position: relative;
+  &::before {
+    @include mx.bgHeroImg(-5, '/images/home-contact-bg.jpg', 1);
+    background-attachment: fixed;
+  }
+  &::after {
+    @include mx.bgColor(-3, color.$lightBlack, 0.6);
+  }
+  .home-contact {
+    width: 60%;
+    @include mx.flexColCenter();
+    gap: 1.5rem;
+    .subtitle {
+      font-size: 2rem;
+    }
+    .subtitle, .text {
+      color: color.$white;
+      text-align: center;
+      text-shadow: 0 0 0.5rem color.$black;
+    }
+    .text {
+      font-size: 1.5rem;
+    }
+    a {
+      color: color.$white;
+      padding: 0.5rem 1rem;
+      border-radius: 3rem;
+      border: 1px solid color.$white;
+    }
+  }
+}
+
 
 /*----------- BREAKPOINTS -----------*/
 
@@ -215,6 +252,12 @@
       width: 100%;
     }
   }
+
+  .home-contact-section {
+    .home-contact {
+      width: 100%;
+    }
+  }
 }
 
 @media all and (min-width: 576px) and (max-width: 991px) {
@@ -226,6 +269,12 @@
   .home-intro {
     .home-intro-box {
       width: 80%;
+    }
+  }
+
+  .home-contact-section {
+    .home-contact {
+      width: 75%;
     }
   }
 }
