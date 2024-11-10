@@ -9,9 +9,16 @@
 
 <template>
   <HeroHeader class="home-bg">
-    <h1 class="header-title">Company Name</h1>
-    <h2 class="header-subtitle">Effective Design</h2>
-    <a href="#home-landing" class="header-btn button btn-first">Get started</a>
+    <h1 class="header-title" data-aos="fade-down" data-aos-duration="1500">Company Name</h1>
+    <h2 class="header-subtitle" data-aos="zoom-in-out" data-aos-duration="1500">Effective Design</h2>
+    <a 
+      href="#home-landing" 
+      class="header-btn button btn-first" 
+      data-aos="fade-up" 
+      data-aos-duration="1500"
+    >
+      Get started
+    </a>
   </HeroHeader>
   <HomeIntro />
   <HomeSlider />

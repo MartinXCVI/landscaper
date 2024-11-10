@@ -1,14 +1,14 @@
 
 <template>
-  <section class="slider-section">
-    <article class="slider-article">
+  <section class="slider-section over-x">
+    <article class="slider-article" data-aos="fade-right" data-aos-duration="2000">
       <h2 class="subtitle capital">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
       <div class="line"></div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quibusdam laborum repellat aspernatur in hic vel rerum facere sunt sit.</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam provident dolore ex exercitationem illum! Placeat laudantium excepturi laborum cupiditate inventore quidem pariatur molestiae in et!</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quas facere laudantium natus dolorum obcaecati inventore perspiciatis recusandae! Temporibus delectus, exercitationem saepe quas est iste autem accusantium esse eius ex obcaecati magnam ducimus, nulla et.</p>
     </article>
-    <section class="slider-container">
+    <section class="slider-container" data-aos="fade-left" data-aos-duration="2000">
       <div class="slider">
         <div class="front"></div>
         <div class="back"></div>

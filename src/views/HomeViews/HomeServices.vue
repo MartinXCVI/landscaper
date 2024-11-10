@@ -7,11 +7,11 @@ import ServiceCard from './ServiceCard.vue';
     <h2 class="title capital">our most demanded services</h2>
 
     <section class="subcontainer-right">
-      <section class="inner-subcontainer-right">
+      <section class="inner-subcontainer-right" data-aos="fade-right" data-aos-duration="1500">
       </section>
     </section>
 
-    <section class="home-services">
+    <section class="home-services" data-aos="fade-up" data-aos-duration="1500">
       <ServiceCard
         icon="fa-solid fa-leaf"
         title="Service Title"
@@ -45,7 +45,7 @@ import ServiceCard from './ServiceCard.vue';
     </section>
     
     <section class="subcontainer-left">
-      <section class="inner-subcontainer-left">
+      <section class="inner-subcontainer-left" data-aos="fade-left" data-aos-duration="1500">
       </section>
     </section>
 
