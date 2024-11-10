@@ -18,12 +18,12 @@
       <section class="footer-services-wrapper">
         <h3 class="capital subtitle">main services</h3>
         <ul class="footer-services">
-          <li><a href="#">Service name</a></li>
-          <li><a href="#">Service name</a></li>
-          <li><a href="#">Service name</a></li>
-          <li><a href="#">Service name</a></li>
-          <li><a href="#">Service name</a></li>
-          <li><a href="#">Service name</a></li>
+          <li><a href="#" class="capital">garden design</a></li>
+          <li><a href="#" class="capital">irrigation services</a></li>
+          <li><a href="#" class="capital">trees planting</a></li>
+          <li><a href="#" class="capital">garden maintenance</a></li>
+          <li><a href="#" class="capital">interior design</a></li>
+          <li><a href="#" class="capital">turf handling</a></li>
         </ul>
       </section>
       <section class="footer-contact">

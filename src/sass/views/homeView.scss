@@ -113,15 +113,16 @@
           object-fit: cover;
           background-color: color.$whiteSnow;
           border-bottom: 5px solid color.$firstColor;
-          i {
+          transition: var.$trs03;
+          .home-intro-icon {
             width: 6rem;
             height: 6rem;
             line-height: 6rem;
             font-size: 3.5rem;
             color: color.$firstColor;
-            // padding: 1rem;
             border-radius: 3rem;
             background-color: color.$white;
+            transition: var.$trs05;
           }
           p {
             font-size: 1.1rem;
@@ -129,6 +130,25 @@
         }
       }
     }  
+  }
+}
+
+.article-container article .article-card {
+  &:hover {
+    background-color: color.$firstColor !important;
+    border-bottom: 5px solid color.$thirdColor !important;
+    border-radius: 1rem !important;
+  }
+  &:hover .home-intro-icon {
+    color: color.$thirdColor !important;
+    border-radius: 1rem !important;
+    background-color: color.$whiteSnow !important;
+  }
+  &:hover .title {
+    color: color.$whiteSnow;
+  }
+  &:hover .text-grey {
+    color: color.$lighterGrey;
   }
 }
 

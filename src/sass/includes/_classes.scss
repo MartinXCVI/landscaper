@@ -1,5 +1,6 @@
 @use './typography' as font;
 @use './colors' as color;
+@use './variables' as var;
 
 .container {
   width: 100%;
@@ -58,4 +59,19 @@
   border-radius: 3rem;
   color: white;
   transition: 0.3s linear all;
+}
+
+.btn-first {
+  transition: var.$trs03;
+  &:hover {
+    background-color: color.$thirdColor !important;
+  }
+}
+
+.btn-white {
+  transition: var.$trs03;
+  &:hover {
+    background-color: color.$white;
+    color: color.$black !important;
+  }
 }

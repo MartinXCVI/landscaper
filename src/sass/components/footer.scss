@@ -60,6 +60,10 @@
     gap: 1rem;
     li a {
       color: color.$softGrey;
+      transition: var.$trs03;
+      &:hover {
+        color: color.$white;
+      }
     }
   }
   .subtitle {
@@ -84,6 +88,10 @@
     gap: 1rem;
     li a {
       color: color.$softGrey;
+      transition: var.$trs03;
+      &:hover {
+        color: color.$white;
+      }
     }
   }
 }
@@ -100,6 +108,7 @@
   .footer-contact-div {
     h4 {
       color: color.$white;
+      font-weight: 500;
     }
     p {
       color: color.$softGrey;
@@ -115,7 +124,7 @@
   border-radius: 3rem;
   color: color.$white;
   .github-link {
-    color: lightcoral;
+    color: color.$sixthColor;
   }
 }
 

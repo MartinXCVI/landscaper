@@ -2,6 +2,7 @@
   import HeroHeader from '@/components/HeroHeader.vue';
   import Header from '@/components/Header.vue';
   import Navbar from '@/components/Navbar.vue';
+  import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
@@ -12,5 +13,5 @@
     <h1 class="header-title">About Us</h1>
   </HeroHeader>
   
-  <h1>Hello from About</h1>
+  <Footer />
 </template>

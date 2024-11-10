@@ -116,6 +116,21 @@ button {
   transition: 0.3s linear all;
 }
 
+.btn-first {
+  transition: 0.3s linear all;
+}
+.btn-first:hover {
+  background-color: #487c44 !important;
+}
+
+.btn-white {
+  transition: 0.3s linear all;
+}
+.btn-white:hover {
+  background-color: #fdfdfd;
+  color: #151515 !important;
+}
+
 /*----- Components -----*/
 /*----- Includes -----*/
 .hero-header {
@@ -459,6 +474,10 @@ button {
 }
 .footer-nav-wrapper .footer-navbar li a {
   color: #d3d3d3;
+  transition: 0.3s linear all;
+}
+.footer-nav-wrapper .footer-navbar li a:hover {
+  color: #fdfdfd;
 }
 .footer-nav-wrapper .subtitle {
   font-size: 1.25rem;
@@ -483,6 +502,10 @@ button {
 }
 .footer-services-wrapper .footer-services li a {
   color: #d3d3d3;
+  transition: 0.3s linear all;
+}
+.footer-services-wrapper .footer-services li a:hover {
+  color: #fdfdfd;
 }
 
 .footer-contact {
@@ -497,6 +520,7 @@ button {
 }
 .footer-contact .footer-contact-div h4 {
   color: #fdfdfd;
+  font-weight: 500;
 }
 .footer-contact .footer-contact-div p {
   color: #d3d3d3;
@@ -511,7 +535,7 @@ button {
   color: #fdfdfd;
 }
 .dev-signature .github-link {
-  color: lightcoral;
+  color: #e67171;
 }
 
 @media all and (max-width: 575px) {
@@ -723,8 +747,9 @@ button {
   object-fit: cover;
   background-color: #f2f2f2;
   border-bottom: 5px solid #354e33;
+  transition: 0.3s linear all;
 }
-.home-columns .home-second-column .article-container article .article-card i {
+.home-columns .home-second-column .article-container article .article-card .home-intro-icon {
   width: 6rem;
   height: 6rem;
   line-height: 6rem;
@@ -732,9 +757,27 @@ button {
   color: #354e33;
   border-radius: 3rem;
   background-color: #fdfdfd;
+  transition: 0.5s linear all;
 }
 .home-columns .home-second-column .article-container article .article-card p {
   font-size: 1.1rem;
+}
+
+.article-container article .article-card:hover {
+  background-color: #354e33 !important;
+  border-bottom: 5px solid #487c44 !important;
+  border-radius: 1rem !important;
+}
+.article-container article .article-card:hover .home-intro-icon {
+  color: #487c44 !important;
+  border-radius: 1rem !important;
+  background-color: #f2f2f2 !important;
+}
+.article-container article .article-card:hover .title {
+  color: #f2f2f2;
+}
+.article-container article .article-card:hover .text-grey {
+  color: #c9c9c9;
 }
 
 .home-columns .home-second-column figure {

@@ -110,7 +110,6 @@
   height: 400px;
   position: absolute;
   box-shadow: 0 0 5px #ccc, inset 0 0 10px #ddd;
-  /* transform: translateY(50px); */
 }
 
 .front {
@@ -181,7 +180,7 @@
 }
 
 .slider-btn {
-  min-width: 5rem;
+  min-width: 7.5rem;
   padding: 0.5rem 0.75rem;
   border-radius: 3rem;
   text-transform: uppercase;
@@ -193,7 +192,7 @@
   transition: 300ms;
   &:hover {
     background-color: #487c44;
-    color: black;
+    color: #e67171;
   }
 }
 
