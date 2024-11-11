@@ -3,6 +3,7 @@
   import Header from '@/components/Header.vue';
   import Navbar from '@/components/Navbar.vue';
   import AboutIntro from './AboutViews/AboutIntro.vue';
+  import AboutTeam from './AboutViews/AboutTeam.vue';
   import Footer from '@/components/Footer.vue';
 </script>
 
@@ -14,5 +15,6 @@
     <h1 class="header-title">About Us</h1>
   </HeroHeader>
   <AboutIntro />
+  <AboutTeam />
   <Footer />
 </template>

@@ -1055,13 +1055,65 @@ button {
   border-radius: 0.25rem;
 }
 
+.team-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2.5rem;
+}
+.team-section .subtitle {
+  margin-bottom: 2rem;
+}
+
+.members-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.members-div .member-fig {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.members-div .member-fig img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.member-fig .member-info {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  border-radius: 0.5rem;
+  background-color: #fdfdfd;
+  padding: 0.75rem 1rem;
+}
+.member-fig .member-info h4 {
+  font-size: 1.25rem;
+  color: #354e33;
+}
+.member-fig .member-info i {
+  font-size: 1.5rem;
+  color: #354e33;
+}
+
 @media all and (max-width: 575px) {
-  .about-intro-section {
+  .about-intro-section, .team-section {
     padding: 2rem 1rem;
   }
 }
 @media all and (min-width: 576px) and (max-width: 991px) {
-  .about-intro-section {
+  .about-intro-section, .team-section {
     padding: 3rem 2rem;
   }
 }
@@ -1087,6 +1139,12 @@ button {
   }
   .about-figures-section .figures-div:first-of-type {
     flex-direction: column-reverse;
+  }
+  .members-div {
+    flex-direction: column;
+  }
+  .members-div .member-fig {
+    width: 100%;
   }
 }
 /*----- Includes -----*/
