@@ -13,7 +13,7 @@
     <h2 class="header-subtitle" data-aos="zoom-in-out" data-aos-duration="1500">Effective Design</h2>
     <a 
       href="#home-landing" 
-      class="header-btn button btn-first" 
+      class="button btn-first" 
       data-aos="fade-up" 
       data-aos-duration="1500"
     >

@@ -1,5 +1,5 @@
 <template>
-  <section class="team-section">
+  <section class="team-section wrapper">
     <h2 class="capital subtitle" data-aos="zoom-in-out" data-aos-duration="2000">our team</h2>
     <div class="members-div">
       <figure class="member-fig" data-aos="fade-down" data-aos-duration="2000">

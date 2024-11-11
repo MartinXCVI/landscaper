@@ -2,11 +2,15 @@
 @use './colors' as color;
 @use './variables' as var;
 
-.container {
+
+.wrapper {
   width: 100%;
-  min-height: 90vh;
-  margin-inline: auto;
-  padding: 1.5rem 1.5rem;
+  min-height: 100vh;
+  padding: 4rem 2.5rem;
+}
+
+.image {
+  width: 100%;
 }
 
 .text-center {
@@ -23,14 +27,18 @@
 
 .title {
   font-family: font.$titleFont;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   letter-spacing: 0.25vw;
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
 }
 
 .subtitle {
   font-family: font.$titleFont;
-  font-size: 1.75rem;
+  font-size: 2rem;
   letter-spacing: 0.10vw;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
 }
 
 .capital {
@@ -62,6 +70,7 @@
 }
 
 .btn-first {
+  background-color: color.$firstColor;
   transition: var.$trs03;
   &:hover {
     background-color: color.$thirdColor !important;
@@ -70,8 +79,38 @@
 
 .btn-white {
   transition: var.$trs03;
+  border: 1px solid color.$white;
   &:hover {
     background-color: color.$white;
     color: color.$black !important;
+  }
+}
+
+@media all and (max-width: 575px) {
+  
+  .wrapper {
+    padding: 2rem 1rem;
+  }
+}
+
+@media all and (min-width: 576px) and (max-width: 991px) {
+  
+  .wrapper {
+    padding: 3rem 2rem;
+  }
+}
+
+@media all and (max-width: 767px) {
+
+  .title, .subtitle {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
   }
 }

@@ -57,11 +57,14 @@ button {
   }
 }
 /*----- Includes -----*/
-.container {
+.wrapper {
   width: 100%;
-  min-height: 90vh;
-  margin-inline: auto;
-  padding: 1.5rem 1.5rem;
+  min-height: 100vh;
+  padding: 4rem 2.5rem;
+}
+
+.image {
+  width: 100%;
 }
 
 .text-center {
@@ -78,14 +81,18 @@ button {
 
 .title {
   font-family: "Libre Baskerville", serif;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   letter-spacing: 0.25vw;
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
 }
 
 .subtitle {
   font-family: "Libre Baskerville", serif;
-  font-size: 1.75rem;
+  font-size: 2rem;
   letter-spacing: 0.1vw;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
 }
 
 .capital {
@@ -117,6 +124,7 @@ button {
 }
 
 .btn-first {
+  background-color: #354e33;
   transition: 0.3s linear all;
 }
 .btn-first:hover {
@@ -125,12 +133,34 @@ button {
 
 .btn-white {
   transition: 0.3s linear all;
+  border: 1px solid #fdfdfd;
 }
 .btn-white:hover {
   background-color: #fdfdfd;
   color: #151515 !important;
 }
 
+@media all and (max-width: 575px) {
+  .wrapper {
+    padding: 2rem 1rem;
+  }
+}
+@media all and (min-width: 576px) and (max-width: 991px) {
+  .wrapper {
+    padding: 3rem 2rem;
+  }
+}
+@media all and (max-width: 767px) {
+  .title, .subtitle {
+    text-align: center;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+}
 /*----- Components -----*/
 /*----- Includes -----*/
 .hero-header {
@@ -158,9 +188,6 @@ button {
   font-weight: 200;
   margin-bottom: 1.5rem;
   text-align: center;
-}
-.hero-header .header-btn {
-  background-color: #354e33;
 }
 
 @media all and (max-width: 767px) {
@@ -612,17 +639,13 @@ button {
 }
 
 .home-landing {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 2.5rem;
 }
 
 .home-intro {
-  width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -637,22 +660,16 @@ button {
   width: 75%;
   padding-block: 3rem;
 }
-.home-intro .home-intro-box .title {
-  margin-bottom: 1rem;
-}
 .home-intro .separator-fig {
   width: 40%;
-}
-
-.separator-fig {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.separator-fig img {
-  width: 100%;
+
+.home-intro.wrapper {
+  min-height: 90vh;
 }
 
 .article-container article {
@@ -665,7 +682,6 @@ button {
 }
 
 .home-columns {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -673,7 +689,6 @@ button {
   padding-block: 4rem;
 }
 .home-columns .home-first-column {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -684,9 +699,6 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.home-columns .home-first-column figure img {
-  width: 100%;
 }
 .home-columns .home-first-column .article-container {
   width: 40%;
@@ -700,7 +712,6 @@ button {
 }
 
 .home-columns .home-second-column {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -714,7 +725,6 @@ button {
 }
 .home-columns .home-second-column .article-container .subtitle {
   width: 75%;
-  margin-bottom: 2rem;
   border-right: 3px solid #354e33;
   padding-bottom: 1.5rem;
 }
@@ -787,9 +797,6 @@ button {
   justify-content: center;
   align-items: center;
 }
-.home-columns .home-second-column figure img {
-  width: 100%;
-}
 
 .subcontainer-left {
   width: 100%;
@@ -817,20 +824,16 @@ button {
 }
 
 .home-services-section {
-  width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 2.5rem;
 }
 .home-services-section .title {
   text-align: center;
   margin-bottom: 2rem;
 }
 .home-services-section .home-services {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -849,9 +852,7 @@ button {
 }
 
 .home-contact-section {
-  width: 100%;
   min-height: 85vh;
-  padding: 4rem 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -900,31 +901,25 @@ button {
 .home-contact-section .home-contact .text {
   font-size: 1.5rem;
 }
-.home-contact-section .home-contact a {
-  color: #fdfdfd;
-  padding: 0.5rem 1rem;
-  border-radius: 3rem;
-  border: 1px solid #fdfdfd;
-}
 
 /*----------- BREAKPOINTS -----------*/
 @media all and (max-width: 575px) {
-  .home-landing {
-    padding: 2rem 1rem;
-  }
   .home-intro .home-intro-box {
     width: 100%;
+  }
+  .home-intro .separator-fig {
+    width: 75%;
   }
   .home-contact-section .home-contact {
     width: 100%;
   }
 }
 @media all and (min-width: 576px) and (max-width: 991px) {
-  .home-landing {
-    padding: 3rem 2rem;
-  }
   .home-intro .home-intro-box {
     width: 80%;
+  }
+  .home-intro .separator-fig {
+    width: 60%;
   }
   .home-contact-section .home-contact {
     width: 75%;
@@ -1004,12 +999,9 @@ button {
 }
 
 .about-intro-section {
-  width: 100%;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 4rem 2.5rem;
   gap: 2rem;
 }
 .about-intro-section .about-intro {
@@ -1056,15 +1048,10 @@ button {
 }
 
 .team-section {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 2.5rem;
-}
-.team-section .subtitle {
-  margin-bottom: 2rem;
 }
 
 .members-div {
@@ -1072,7 +1059,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 .members-div .member-fig {
   width: 25%;
@@ -1107,16 +1094,6 @@ button {
   color: #354e33;
 }
 
-@media all and (max-width: 575px) {
-  .about-intro-section, .team-section {
-    padding: 2rem 1rem;
-  }
-}
-@media all and (min-width: 576px) and (max-width: 991px) {
-  .about-intro-section, .team-section {
-    padding: 3rem 2rem;
-  }
-}
 @media all and (max-width: 991px) {
   .about-intro-section {
     flex-direction: column;
@@ -1124,10 +1101,6 @@ button {
   .about-intro-section .about-intro {
     width: 100%;
     margin-bottom: 2rem;
-  }
-  .about-intro-section h2 {
-    text-align: center;
-    line-height: 1.5;
   }
   .about-figures-section {
     width: 100%;
@@ -1145,6 +1118,12 @@ button {
   }
   .members-div .member-fig {
     width: 100%;
+  }
+}
+@media all and (min-width: 992px) {
+  .about-intro-section .about-intro {
+    border-left: 4px solid #354e33;
+    padding-left: 2rem;
   }
 }
 /*----- Includes -----*/

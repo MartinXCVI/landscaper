@@ -2,17 +2,17 @@
 </script>
 
 <template>
-  <section class="home-landing" id="home-landing"> 
-    <section class="home-intro">
+  <section class="home-landing wrapper" id="home-landing"> 
+    <section class="home-intro wrapper">
       <figure class="separator-fig first-separator">
-        <img src="/icons/separator.png" alt="" data-aos="zoom-out" data-aos-duration="1500">
+        <img class="image" src="/icons/separator.png" alt="" data-aos="zoom-out" data-aos-duration="1500">
       </figure>
       <div class="home-intro-box" data-aos="zoom-in-out" data-aos-duration="2000">
         <h2 class="title">With beauty comes inspration</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque hic minima ipsa blanditiis. Sint amet inventore consectetur cum sequi nihil mollitia. Inventore doloribus autem obcaecati voluptatibus quas ut molestiae harum suscipit vero et! Saepe, nemo?</p>
       </div>
-      <figure class="separator-fig">
-        <img src="/icons/separator.png" alt="" data-aos="zoom-out" data-aos-duration="1500">
+      <figure class="separator-fig" data-aos="zoom-out" data-aos-duration="1500">
+        <img class="image" src="/icons/separator.png" alt="">
       </figure>     
     </section>
 
@@ -23,7 +23,7 @@
       </section>
       <section class="home-first-column">
         <figure data-aos="fade-up" data-aos-duration="1500">
-          <img src="/images/home-column-fig-1.jpg" alt="">
+          <img class="image" src="/images/home-column-fig-1.jpg" alt="">
         </figure>
         <section class="article-container">
           <article data-aos="fade-down" data-aos-duration="1500">
@@ -53,7 +53,7 @@
           </article>
         </section>
         <figure data-aos="fade-down" data-aos-duration="1500">
-          <img src="/images/home-column-fig-2.jpg" alt="">
+          <img class="image" src="/images/home-column-fig-2.jpg" alt="">
         </figure>
       </section>
 

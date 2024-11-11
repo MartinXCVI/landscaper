@@ -15,14 +15,10 @@
 }
 
 .home-landing {
-  width: 100%;
   @include mx.flexColCenter();
-  padding: 4rem 2.5rem;
 }
 
 .home-intro {
-  width: 100%;
-  min-height: 100vh;
   @include mx.flexColCenter();
   text-align: center;
   gap: 1rem;
@@ -32,22 +28,17 @@
   .home-intro-box {
     width: 75%;
     padding-block: 3rem;
-    .title {
-      margin-bottom: 1rem;
-    }
   }
   .separator-fig {
     width: 40%;
+    @include mx.flexColCenter();
   }
 }
 
-.separator-fig {
-  width: 100%;
-  @include mx.flexColCenter();
-  img {
-    width: 100%;
-  }
+.home-intro.wrapper {
+  min-height: 90vh;
 }
+
 
 .article-container article {
   @include mx.flexCol(flex-start, flex-start);
@@ -56,18 +47,13 @@
 }
 
 .home-columns {
-  width: 100%;
   @include mx.flexColCenter();
   padding-block: 4rem;
   .home-first-column {
-    width: 100%;
     @include mx.flexRowCenter();
     figure {
       width: 60%;
       @include mx.flexColCenter();
-      img {
-        width: 100%;
-      }
     }
     .article-container {
       width: 40%;
@@ -82,14 +68,12 @@
 
 .home-columns {
   .home-second-column {
-    width: 100%;
     @include mx.flexRowCenter();
     .article-container {
       width: 60%;
       @include mx.flexColCenter();
       .subtitle {
         width: 75%;
-        margin-bottom: 2rem;
         border-right: 3px solid color.$firstColor;
         padding-bottom: 1.5rem;
       }
@@ -157,13 +141,10 @@
     figure {
       width: 40%;
       @include mx.flexColCenter();
-      img {
-        width: 100%;
-      }
+
     }
   }
 }
-
 
 .subcontainer-left {
   width: 100%;
@@ -190,16 +171,12 @@
 }
 
 .home-services-section {
-  width: 100%;
-  min-height: 100vh;
   @include mx.flexColCenter();
-  padding: 4rem 2.5rem;
   .title {
     text-align: center;
     margin-bottom: 2rem;
   }
   .home-services {
-    width: 100%;
     @include mx.flexRowCenter();
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -221,9 +198,7 @@
 }
 
 .home-contact-section {
-  width: 100%;
   min-height: 85vh;
-  padding: 4rem 2.5rem;
   @include mx.flexColCenter();
   position: relative;
   &::before {
@@ -248,12 +223,6 @@
     .text {
       font-size: 1.5rem;
     }
-    a {
-      color: color.$white;
-      padding: 0.5rem 1rem;
-      border-radius: 3rem;
-      border: 1px solid color.$white;
-    }
   }
 }
 
@@ -263,13 +232,12 @@
 
 @media all and (max-width: 575px) {
 
-  .home-landing {
-    padding: 2rem 1rem;
-  }
-
   .home-intro {
     .home-intro-box {
       width: 100%;
+    }
+    .separator-fig {
+      width: 75%;
     }
   }
 
@@ -282,13 +250,12 @@
 
 @media all and (min-width: 576px) and (max-width: 991px) {
 
-  .home-landing {
-    padding: 3rem 2rem;
-  }
-
   .home-intro {
     .home-intro-box {
       width: 80%;
+    }
+    .separator-fig {
+      width: 60%;
     }
   }
 

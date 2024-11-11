@@ -3,7 +3,7 @@ import ServiceCard from './ServiceCard.vue';
 </script>
 
 <template>
-  <section class="home-services-section">
+  <section class="home-services-section wrapper">
     <h2 class="title capital">our most demanded services</h2>
 
     <section class="subcontainer-right">

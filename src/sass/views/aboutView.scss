@@ -15,10 +15,7 @@
 }
 
 .about-intro-section {
-  width: 100%;
-  min-height: 100vh;
   @include mx.flexRow(center, flex-start);
-  padding: 4rem 2.5rem;
   gap: 2rem;
   .about-intro {
     width: 50%;
@@ -54,18 +51,13 @@
 }
 
 .team-section {
-  width: 100%;
   @include mx.flexColCenter();
-  padding: 4rem 2.5rem;
-  .subtitle {
-    margin-bottom: 2rem;
-  }
 }
 
 .members-div {
   width: 100%;
   @include mx.flexRowCenter();
-  gap: 2rem;
+  gap: 3rem;
   .member-fig {
     width: 25%;
     @include mx.flexColCenter();
@@ -97,19 +89,6 @@
   }
 }
 
-@media all and (max-width: 575px) {
-
-  .about-intro-section, .team-section {
-    padding: 2rem 1rem;
-  }
-}
-
-@media all and (min-width: 576px) and (max-width: 991px) {
-
-  .about-intro-section, .team-section {
-    padding: 3rem 2rem;
-  }
-}
 
 @media all and (max-width: 991px) {
 
@@ -118,10 +97,6 @@
     .about-intro {
       width: 100%;
       margin-bottom: 2rem;
-    }
-    h2 {
-      text-align: center;
-      line-height: 1.5;
     }
   }
 
@@ -141,6 +116,16 @@
     flex-direction: column;
     .member-fig {
       width: 100%;
+    }
+  }
+}
+
+@media all and (min-width: 992px) {
+
+  .about-intro-section {
+    .about-intro {
+      border-left: 4px solid color.$firstColor;
+      padding-left: 2rem;
     }
   }
 }
