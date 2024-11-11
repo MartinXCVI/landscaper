@@ -1003,6 +1003,92 @@ button {
   opacity: 0.9;
 }
 
+.about-intro-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 2.5rem;
+  gap: 2rem;
+}
+.about-intro-section .about-intro {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.about-intro-section .about-intro p {
+  color: #606060;
+}
+.about-intro-section .button {
+  background-color: #354e33;
+}
+
+.about-figures-section {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.about-figures-section .figures-div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-figure {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-figure img {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+@media all and (max-width: 575px) {
+  .about-intro-section {
+    padding: 2rem 1rem;
+  }
+}
+@media all and (min-width: 576px) and (max-width: 991px) {
+  .about-intro-section {
+    padding: 3rem 2rem;
+  }
+}
+@media all and (max-width: 991px) {
+  .about-intro-section {
+    flex-direction: column;
+  }
+  .about-intro-section .about-intro {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .about-intro-section h2 {
+    text-align: center;
+    line-height: 1.5;
+  }
+  .about-figures-section {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .about-figures-section .figures-div {
+    width: 100%;
+  }
+  .about-figures-section .figures-div:first-of-type {
+    flex-direction: column-reverse;
+  }
+}
 /*----- Includes -----*/
 .projects-bg {
   position: relative;
