@@ -13,3 +13,142 @@
     @include mx.bgHeroImg(-5, '/images/projects-bg.jpg', 0.9);
   }
 }
+
+.projects-container {
+  width: 100%;
+  @include mx.flexColCenter();
+}
+
+.project-wrapper {
+  position: relative;
+  @include mx.flexColCenter();
+}
+
+.project-section {
+  width: 100%;
+  @include mx.flexRow(var.$between, center);
+  .project-title-div {
+    width: 40%;
+    .subtitle, .project-location {
+      color: color.$white;
+      text-shadow: 0 0 0.25rem color.$black;
+      margin-bottom: 0.5rem;
+    }
+  }
+  .project-info-div {
+    width: 40%;
+    .project-info {
+      font-size: 0.9rem;
+      line-height: 2;
+      color: color.$white;
+      text-shadow: 0 0 0.25rem color.$black;
+      margin-bottom: 1.5rem;
+    }
+    .button {
+      padding: 0.5rem 1rem;
+    }
+  }
+}
+
+.first-project {
+  &::before {
+    @include mx.bgColor(-3, color.$softerBlack, 0.5);
+  }
+  &::after {
+    @include mx.bgHeroImg(-5, '/images/project-1.jpg', 1);
+  }
+}
+
+.second-project {
+  &::before {
+    @include mx.bgColor(-3, color.$softerBlack, 0.5);
+  }
+  &::after {
+    @include mx.bgHeroImg(-5, '/images/project-2.jpg', 1);
+  }
+}
+
+.third-project {
+  &::before {
+    @include mx.bgColor(-3, color.$softerBlack, 0.5);
+  }
+  &::after {
+    @include mx.bgHeroImg(-5, '/images/project-3.jpg', 1);
+  }
+}
+
+.fourth-project {
+  &::before {
+    @include mx.bgColor(-3, color.$softerBlack, 0.5);
+  }
+  &::after {
+    @include mx.bgHeroImg(-5, '/images/project-4.jpg', 1);
+  }
+}
+
+.fifth-project {
+  &::before {
+    @include mx.bgColor(-3, color.$softerBlack, 0.5);
+  }
+  &::after {
+    @include mx.bgHeroImg(-5, '/images/project-5.jpg', 1);
+  }
+}
+
+.sixth-project {
+  &::before {
+    @include mx.bgColor(-3, color.$softerBlack, 0.5);
+  }
+  &::after {
+    @include mx.bgHeroImg(-5, '/images/project-6.jpg', 1);
+  }
+}
+
+.seventh-project {
+  &::before {
+    @include mx.bgColor(-3, color.$softerBlack, 0.5);
+  }
+  &::after {
+    @include mx.bgHeroImg(-5, '/images/project-7.jpg', 1);
+  }
+}
+
+.first-project,
+.second-project,
+.third-project,
+.fourth-project,
+.fifth-project,
+.sixth-project,
+.seventh-project {
+  &::after {
+    background-attachment: fixed;
+  }
+}
+
+@media all and (max-width: 575px) {
+
+  .project-wrapper.wrapper {
+    padding: 2rem 2rem;
+  }
+}
+
+@media all and (max-width: 991px) {
+
+  .project-section {
+    @include mx.flexCol(flex-start, center);
+    .project-title-div {
+      width: 100%;
+      margin-bottom: 1rem;
+      .subtitle {
+        text-align: start;
+      }
+    }
+    .project-info-div {
+      width: 100%;
+      .project-info {
+        margin-bottom: 2.25rem;
+      }
+    }
+  }
+
+}

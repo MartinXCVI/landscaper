@@ -1153,6 +1153,247 @@ button {
   opacity: 0.9;
 }
 
+.projects-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-section .project-title-div {
+  width: 40%;
+}
+.project-section .project-title-div .subtitle, .project-section .project-title-div .project-location {
+  color: #fdfdfd;
+  text-shadow: 0 0 0.25rem #151515;
+  margin-bottom: 0.5rem;
+}
+.project-section .project-info-div {
+  width: 40%;
+}
+.project-section .project-info-div .project-info {
+  font-size: 0.9rem;
+  line-height: 2;
+  color: #fdfdfd;
+  text-shadow: 0 0 0.25rem #151515;
+  margin-bottom: 1.5rem;
+}
+.project-section .project-info-div .button {
+  padding: 0.5rem 1rem;
+}
+
+.first-project::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -3;
+  background: #353535;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+.first-project::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background-image: url("/images/project-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+.second-project::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -3;
+  background: #353535;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+.second-project::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background-image: url("/images/project-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+.third-project::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -3;
+  background: #353535;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+.third-project::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background-image: url("/images/project-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+.fourth-project::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -3;
+  background: #353535;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+.fourth-project::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background-image: url("/images/project-4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+.fifth-project::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -3;
+  background: #353535;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+.fifth-project::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background-image: url("/images/project-5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+.sixth-project::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -3;
+  background: #353535;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+.sixth-project::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background-image: url("/images/project-6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+.seventh-project::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -3;
+  background: #353535;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+.seventh-project::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background-image: url("/images/project-7.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+.first-project::after,
+.second-project::after,
+.third-project::after,
+.fourth-project::after,
+.fifth-project::after,
+.sixth-project::after,
+.seventh-project::after {
+  background-attachment: fixed;
+}
+
+@media all and (max-width: 575px) {
+  .project-wrapper.wrapper {
+    padding: 2rem 2rem;
+  }
+}
+@media all and (max-width: 991px) {
+  .project-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .project-section .project-title-div {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .project-section .project-title-div .subtitle {
+    text-align: start;
+  }
+  .project-section .project-info-div {
+    width: 100%;
+  }
+  .project-section .project-info-div .project-info {
+    margin-bottom: 2.25rem;
+  }
+}
 /*----- Includes -----*/
 .services-bg {
   position: relative;

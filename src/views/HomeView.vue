@@ -11,14 +11,14 @@
   <HeroHeader class="home-bg">
     <h1 class="header-title" data-aos="fade-down" data-aos-duration="1500">Company Name</h1>
     <h2 class="header-subtitle" data-aos="zoom-in-out" data-aos-duration="1500">Effective Design</h2>
-    <a 
+    <div class="button-wrapper" data-aos="fade-up" data-aos-duration="1500">
+      <a 
       href="#home-landing" 
       class="button btn-first" 
-      data-aos="fade-up" 
-      data-aos-duration="1500"
-    >
-      Get started
-    </a>
+      >
+        Get started
+      </a>
+    </div>
   </HeroHeader>
   <HomeIntro />
   <HomeSlider />
