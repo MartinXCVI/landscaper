@@ -1421,6 +1421,236 @@ button {
   opacity: 0.9;
 }
 
+.service-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.service-wrapper .service-fig {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.service-wrapper .service-info {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.service-wrapper .service-info .service-icon {
+  font-size: 3rem;
+  color: #354e33;
+}
+.service-wrapper .service-info .subtitle {
+  margin-bottom: 0.5rem;
+  color: #252525;
+}
+.service-wrapper .service-info .service-text {
+  color: #606060;
+}
+
+.first-bg {
+  position: relative;
+}
+.first-bg::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -2;
+  background: #354e33;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  top: 5%;
+  right: 10%;
+  transform: translate(-10%, 5%);
+}
+.first-bg::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background-image: url("/images/service-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  top: 5%;
+  right: 10%;
+  transform: translate(-10%, 5%);
+}
+
+.third-bg {
+  position: relative;
+}
+.third-bg::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -2;
+  background: #354e33;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  top: 5%;
+  right: 10%;
+  transform: translate(-10%, 5%);
+}
+.third-bg::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background-image: url("/images/service-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  top: 5%;
+  right: 10%;
+  transform: translate(-10%, 5%);
+}
+
+.fifth-bg {
+  position: relative;
+}
+.fifth-bg::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -2;
+  background: #354e33;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  top: 5%;
+  right: 10%;
+  transform: translate(-10%, 5%);
+}
+.fifth-bg::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background-image: url("/images/service-5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  top: 5%;
+  right: 10%;
+  transform: translate(-10%, 5%);
+}
+
+.seventh-bg {
+  position: relative;
+}
+.seventh-bg::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -2;
+  background: #354e33;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  top: 5%;
+  right: 10%;
+  transform: translate(-10%, 5%);
+}
+.seventh-bg::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background-image: url("/images/service-7.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  top: 5%;
+  right: 10%;
+  transform: translate(-10%, 5%);
+}
+
+.service-wrapper.reversed-row {
+  flex-direction: row-reverse;
+  background-color: #efefef;
+  padding-block: 0;
+}
+.service-wrapper.reversed-row .service-fig {
+  width: 55%;
+}
+.service-wrapper.reversed-row .service-info {
+  width: 40%;
+}
+
+@media all and (max-width: 575px) {
+  .service-wrapper .service-fig {
+    margin-left: 1.75rem;
+    margin-bottom: 2rem;
+  }
+}
+@media all and (min-width: 576px) and (max-width: 991px) {
+  .service-wrapper .service-fig {
+    margin-left: 2rem;
+    margin-bottom: 3.5rem;
+  }
+}
+@media all and (max-width: 991px) {
+  .service-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-wrapper .service-fig {
+    width: 90%;
+  }
+  .service-wrapper .service-info {
+    width: 100%;
+  }
+  .service-wrapper.reversed-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 3rem;
+  }
+  .service-wrapper.reversed-row .service-fig {
+    width: 100%;
+    margin-left: unset;
+    margin-bottom: unset;
+  }
+  .service-wrapper.reversed-row .service-info {
+    width: 100%;
+  }
+}
 /*----- Includes -----*/
 .contact-bg {
   position: relative;

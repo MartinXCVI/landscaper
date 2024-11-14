@@ -13,7 +13,7 @@
 
 <template>
   <section class="project-wrapper wrapper" :class="background">
-    <section class="project-section">
+    <section class="project-section" data-aos="fade-up" data-aos-duration="1000">
       <div class="project-title-div">
         <h2 class="caps subtitle">{{ title }}</h2>
         <p class="project-location">{{ location }}</p>
