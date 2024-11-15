@@ -21,8 +21,20 @@
   color: color.$grey;
 }
 
+.text-dark-grey {
+  color: color.$darkGrey;
+}
+
 .text-black {
   color: color.$black;
+}
+
+.semi-bold {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 .title {
