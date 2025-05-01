@@ -1,72 +1,95 @@
-
 <template>
   <section class="slider-section over-x">
     <article class="slider-article" data-aos="fade-right" data-aos-duration="2000">
       <h2 class="subtitle capital">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
       <div class="line"></div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quibusdam laborum repellat aspernatur in hic vel rerum facere sunt sit.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam provident dolore ex exercitationem illum! Placeat laudantium excepturi laborum cupiditate inventore quidem pariatur molestiae in et!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quas facere laudantium natus dolorum obcaecati inventore perspiciatis recusandae! Temporibus delectus, exercitationem saepe quas est iste autem accusantium esse eius ex obcaecati magnam ducimus, nulla et.</p>
+      <p>At Green Horizon Landscaping, we design and build outdoor spaces that are both beautiful and practical. From elegant patios and custom walkways to vibrant gardens and low-maintenance lawns, we shape landscapes that match your lifestyle and vision.</p>
+      <p>Our expert team combines creativity with craftsmanship to deliver lasting results. Whether you’re starting fresh or upgrading an existing space, we work closely with you to bring your ideas to life.</p>
+      <p>Explore our cube slider to see real examples of our work — a visual showcase of projects that blend natural beauty with thoughtful design.</p>
     </article>
     <section class="slider-container" data-aos="fade-left" data-aos-duration="2000">
-      <div class="slider">
-        <div class="front"></div>
-        <div class="back"></div>
-        <div class="left"></div>
-        <div class="right"></div>
+      <div v-if="!isMobile" ref="cubeRef" class="slider" :style="{ transform: cubeTransform }">
+        <div class="face front" :style="faceStyle(0)"></div>
+        <div class="face right" :style="faceStyle(1)"></div>
+        <div class="face back" :style="faceStyle(2)"></div>
+        <div class="face left" :style="faceStyle(3)"></div>
       </div>
-      <br/>
+
+      <div v-else class="mobile-slider">
+        <img :src="images[currentIndex]" :alt="'Slide ' + (currentIndex + 1)" />
+      </div>
+      <!-- <br/> -->
       <div class="slider-buttons">
-        <button class="slider-btn" @click="leftSide()">Left</button>
-        <button class="slider-btn" @click="rightSide()">Right</button>
+        <button class="slider-btn" @click="prevSlide">Prev</button>
+        <button class="slider-btn" @click="nextSlide">Next</button>
       </div>
     </section>
   </section>
 </template>
 
-<script>
+<script setup>
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 
-  export default {
-    data() {
-      return {
-        Change: 0,
-      }
-    },
-    methods: {
-      leftSide() {
-        this.Change += 90;
-        document.querySelector('.slider')
-        .style.transform = `perspective(3000px) rotateX(270deg) rotate(${this.Change}deg) translateZ(-200px)`
-      },
-      rightSide() {
-        this.Change -= 90;
-        document.querySelector('.slider')
-        .style.transform = `perspective(3000px) rotateX(270deg) rotate(${this.Change}deg) translateZ(-200px)`
-      }
-    }
+const images = [
+  '/images/slider-1.jpg',
+  '/images/slider-2.jpg',
+  '/images/slider-3.jpg',
+  '/images/slider-4.jpg',
+]
+
+const currentIndex = ref(0)
+const cubeRef = ref(null)
+const isMobile = ref(false)
+
+const cubeTransform = computed(() =>
+  `perspective(1000px) rotateY(${-currentIndex.value * 90}deg)`
+)
+
+function faceStyle(index) {
+  return {
+    backgroundImage: `url('${images[index]}')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
   }
+}
 
+function nextSlide() {
+  currentIndex.value = (currentIndex.value + 1) % images.length
+}
+
+function prevSlide() {
+  currentIndex.value = (currentIndex.value - 1 + images.length) % images.length
+}
+
+function handleResize() {
+  isMobile.value = window.innerWidth < 768
+}
+
+onMounted(() => {
+  handleResize()
+  window.addEventListener('resize', handleResize)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize)
+})
 </script>
 
 <style>
-
 .slider-section {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  background: linear-gradient(145deg, rgba(53, 78, 51, 0.6) 0%, rgba(239,239,239,1) 20%, rgba(211,211,211,1) 40%, rgba(211,211,211,1) 60%, rgba(239,239,239,1) 80%, rgba(53, 78, 51, 0.6));
-  padding: 3rem 2rem;
-  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  background: linear-gradient(145deg, #354e33aa, #efefef, #d3d3d3, #efefef, #354e33aa);
 }
 
 .slider-article {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex: 1 1 320px;
   gap: 0.75rem;
   .line {
     width: 100%;
@@ -76,215 +99,75 @@
 }
 
 .slider-container {
-  width: 45%;
+  flex: 1 1 320px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .slider {
-  width: 400px;
-  height: 400px;
-  transform: perspective(3000px) rotateX(180deg) rotate(0deg);
-  transform-style: preserve-3d;
-  transition: 750ms;
-  margin-bottom: 1rem;
+  width: 320px;
+  height: 320px;
   position: relative;
-  &::after {
-    content: '';
-    inset: 0;
-    position: absolute;
-    z-index: 0;
-    background-image: url('/images/slider-3.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transform: rotate(180deg);
-  }
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
 }
 
-.front, .back, .left, .right {
-  width: 100%;
-  height: 400px;
+.face {
   position: absolute;
-  box-shadow: 0 0 5px #ccc, inset 0 0 10px #ddd;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  backface-visibility: hidden;
+  border: 2px solid #fff;
 }
 
-.front {
-  transform: rotateX(90deg) translate3d(0px, 200px, 200px);
-  &::after {
-    width: 100%;
-    content: '';
-    inset: 0;
-    z-index: 0;
-    position: absolute;
-    background: url('/images/slider-1.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
+/* Cube faces positioning */
+.front  { transform: rotateY(0deg) translateZ(150px); }
+.right  { transform: rotateY(90deg) translateZ(150px); }
+.back   { transform: rotateY(180deg) translateZ(150px); }
+.left   { transform: rotateY(-90deg) translateZ(150px); }
 
-.back {
-  transform: rotateX(90deg) translate3d(0, 200px, -200px);
-  &::after {
-    width: 100%;
-    content: '';
-    inset: 0;
-    z-index: 0;
-    position: absolute;
-    background: url('/images/slider-2.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.left {
-  transform: rotateX(90deg) rotateY(90deg) translate3d(0px, 200px, -200px);
-  &::after {
-    width: 100%;
-    content: '';
-    inset: 0;
-    z-index: 0;
-    position: absolute;
-    background: url('/images/slider-3.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-.right {
-  transform: rotateX(90deg) rotateY(90deg) translate3d(0px, 200px, 200px);
-  &::after {
-    width: 100%;
-    content: '';
-    inset: 0;
-    z-index: 0;
-    position: absolute;
-    background: url('/images/slider-4.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.mobile-slider img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem #aaa;
 }
 
 .slider-buttons {
+  margin-top: 2.5rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .slider-btn {
-  min-width: 7.5rem;
-  padding: 0.5rem 0.75rem;
-  border-radius: 3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: bold;
   text-transform: uppercase;
-  text-shadow: 0 0 0.25rem darkgray;
-  box-shadow: 0 0 0.25rem darkgray;
-  font-size: 1.25rem;
-  background-color: #354e33;
+  background: #354e33;
   color: white;
-  transition: 300ms;
-  &:hover {
-    background-color: #487c44;
-    color: #e67171;
-  }
+  transition: 0.3s;
 }
 
-@media all and (max-width: 375px) {
-
-  .slider-article {
-    margin-bottom: 4.5rem;
-  }
-
-  .slider {
-    width: 200px;
-    height: 200px;
-  }
-
-  .front, .back, .left, .right {
-    height: 200px;
-  }
-
-  .front {
-    transform: rotateX(90deg) translate3d(0px, 100px, 100px);
-  }
-
-  .back {
-    transform: rotateX(90deg) translate3d(0, 100px, -100px);
-  }
-
-  .left {
-    transform: rotateX(90deg) rotateY(90deg) translate3d(0px, 100px, -100px);
-  }
-
-  .right {
-    transform: rotateX(90deg) rotateY(90deg) translate3d(0px, 100px, 100px);
-  }
-
+.slider-btn:hover {
+  background-color: #487c44;
+  color: #e67171;
 }
 
-@media all and (min-width: 376px) and (max-width: 767px) {
-
-  .slider-article {
-    margin-bottom: 2rem;
-  }
-
-  .slider {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 1.5rem;
-  }
-
-  .front, .back, .left, .right {
-    height: 300px;
-  }
-
-  .front {
-    transform: rotateX(90deg) translate3d(0px, 150px, 150px);
-  }
-
-  .back {
-    transform: rotateX(90deg) translate3d(0, 150px, -150px);
-  }
-
-  .left {
-    transform: rotateX(90deg) rotateY(90deg) translate3d(0px, 150px, -150px);
-  }
-
-  .right {
-    transform: rotateX(90deg) rotateY(90deg) translate3d(0px, 150px, 150px);
-  }
-
-}
-
-@media all and (min-width: 768px) {
-
-  .slider {
-    margin-bottom: 3rem;
-  }
-}
-
-@media all and (max-width: 991px) {
+@media (max-width: 768px) {
 
   .slider-section {
     flex-direction: column;
-    gap: 2rem;
+    /* text-align: center; */
   }
 
   .slider-article {
-    width: 100%;
+    margin-bottom: 1rem;
   }
-
-  .slider-container {
-    width: 100%;
-  }
-
 }
+
 
 </style>
