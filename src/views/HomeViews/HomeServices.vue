@@ -14,33 +14,33 @@ import ServiceCard from './ServiceCard.vue';
     <section class="home-services" data-aos="fade-up" data-aos-duration="1500">
       <ServiceCard
         icon="fa-solid fa-leaf"
-        title="Service Title"
-        text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum odit, repellendus sit velit error harum eveniet cum? Iste illum veritatis."
+        title="Garden Maintenance"
+        text="Keep your greenery healthy and flourishing all year round. We prune, trim, and care for your garden like it's our own."
       />
       <ServiceCard
         icon="fa-solid fa-bucket"
-        title="Service Title"
-        text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum odit, repellendus sit velit error harum eveniet cum? Iste illum veritatis."
+        title="Stone & Hardscape Work"
+        text="Durable patios, paths, and borders laid with precision and style. Our stonework blends structure and elegance."
       />
       <ServiceCard
         icon="fa-solid fa-tree"
-        title="Service Title"
-        text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum odit, repellendus sit velit error harum eveniet cum? Iste illum veritatis."
+        title="Tree Care & Planting"
+        text="From young saplings to towering trees, we plant and preserve them with expertise and long-term health in mind."
       />
       <ServiceCard
         icon="fa-solid fa-water"
-        title="Service Title"
-        text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum odit, repellendus sit velit error harum eveniet cum? Iste illum veritatis."
+        title="Irrigation & Drainage"
+        text="Smart water solutions keep your landscape thriving. We install efficient systems that protect and nourish."
       />
       <ServiceCard
         icon="fa-solid fa-seedling"
-        title="Service Title"
-        text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum odit, repellendus sit velit error harum eveniet cum? Iste illum veritatis."
+        title="Landscape Design"
+        text="We turn ideas into plans, and plans into stunning landscapes. Each design is tailored, practical & beautiful."
       />
       <ServiceCard
         icon="fa-solid fa-snowplow"
-        title="Service Title"
-        text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum odit, repellendus sit velit error harum eveniet cum? Iste illum veritatis."
+        title="Site Prep. & Grading"
+        text="Proper groundwork is essential. We clear, level, and prepare your space for flawless landscaping results."
       />
     </section>
     

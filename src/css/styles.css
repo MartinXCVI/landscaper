@@ -227,6 +227,11 @@ button {
   top: 0;
 }
 
+.button-wrapper {
+  display: flex;
+  gap: 1.25rem;
+}
+
 @media all and (max-width: 991px) {
   .header-element {
     display: flex;

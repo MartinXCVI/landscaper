@@ -2,8 +2,8 @@
   <section class="about-intro-section wrapper">
     <section class="about-intro" data-aos="fade-up" data-aos-duration="2000">
       <h2 class="capital subtitle">beautifying your landscapes since 1996</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut dolorem dignissimos quo laboriosam, modi perferendis quibusdam! Amet repudiandae nesciunt quis facere cum quasi facilis tempora.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum repellendus similique maiores expedita facilis accusantium illo voluptatibus ut porro repudiandae nostrum laudantium harum laborum doloribus, in dignissimos, aperiam commodi quasi magnam consequatur corporis alias vitae.</p>
+      <p>For over two decades, we’ve been dedicated to transforming outdoor spaces into stunning environments with lasting beauty. Our passion for elegant landscaping is matched by our commitment to precision and quality in every project.</p>
+      <p>From the first consultation to the final plant in the soil, we bring vision, experience, and craftsmanship to the table. Whether it’s a peaceful garden retreat or a fully reimagined backyard, we believe every detail matters—and we make sure it shows.</p>
       <a class="button btn-first caps" href="/projects">Our works</a>
     </section>
 

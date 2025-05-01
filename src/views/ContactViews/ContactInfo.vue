@@ -1,7 +1,7 @@
 <template>
   <section class="contact-section" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
     <h2 class="capital subtitle">send us your message</h2>
-    <p class="text-dark-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis autem, commodi obcaecati iste fugiat reprehenderit!</p>
+    <p class="text-dark-grey">Got a project in mind or a question about our services? Reach out today — We'd love to hear from you and help bring your landscaping vision to life!</p>
     <div class="contact-card">
       <figure class="contact-fig">
         <img class="image" src="/images/contact-img.jpg" alt="">

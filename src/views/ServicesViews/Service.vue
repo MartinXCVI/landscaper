@@ -1,6 +1,7 @@
 <script setup>
 
   const props = defineProps({
+    id: String,
     reversedRow: String,
     background: String,
     img: String,
@@ -11,12 +12,18 @@
     text2: String
   })
 
-  const { img, alt, reversedRow, icon, title, text1, text2 } = props
+  const { id, img, alt, reversedRow, icon, title, text1, text2 } = props
 
 </script>
 
 <template>
-  <section class="service-wrapper wrapper" :class="reversedRow" data-aos="zoom-in-out" data-aos-duration="2000">
+  <section
+    :id="id"
+    class="service-wrapper wrapper"
+    :class="reversedRow"
+    data-aos="zoom-in-out"
+    data-aos-duration="2000"
+  >
     <figure class="service-fig" :class="background">
       <img class="image" :src=img :alt=alt>
     </figure>

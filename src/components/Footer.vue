@@ -2,8 +2,8 @@
   <footer class="footer-element">
     <section class="footer-info">
       <section class="footer-description">
-        <h3 class="capital subtitle"><i class="fa-brands fa-pagelines home-intro-icon"></i> Company Name</h3>
-        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente modi neque aliquid quas ut voluptatibus, assumenda dolores? Atque, distinctio cupiditate. Neque sit veniam consequatur numquam in soluta consequuntur blanditiis delectus quis ratione. Eligendi, suscipit voluptatum!</p>
+        <h3 class="capital subtitle"><i class="fa-brands fa-pagelines home-intro-icon"></i> Green Horizon Landscaping</h3>
+        <p class="text">We bring years of landscaping expertise to every project, ensuring results that last. From planning to planting, we handle it all with care, skill, and a deep appreciation for detail.</p>
       </section> 
       <section class="footer-nav-wrapper">
         <h3 class="capital subtitle">Navigation</h3>
@@ -18,12 +18,12 @@
       <section class="footer-services-wrapper">
         <h3 class="capital subtitle">main services</h3>
         <ul class="footer-services">
-          <li><a href="#" class="capital">garden design</a></li>
-          <li><a href="#" class="capital">irrigation services</a></li>
-          <li><a href="#" class="capital">trees planting</a></li>
-          <li><a href="#" class="capital">garden maintenance</a></li>
-          <li><a href="#" class="capital">interior design</a></li>
-          <li><a href="#" class="capital">turf handling</a></li>
+          <li><a href="/services#garden-design-section" class="capital">garden design</a></li>
+          <li><a href="/services#irrigation-services-section" class="capital">irrigation services</a></li>
+          <li><a href="/services#trees-planting-section" class="capital">trees planting</a></li>
+          <li><a href="/services#garden-maintenance-section" class="capital">garden maintenance</a></li>
+          <li><a href="/services#interior-design-section" class="capital">interior design</a></li>
+          <li><a href="/services#turf-handling-section" class="capital">turf handling</a></li>
         </ul>
       </section>
       <section class="footer-contact">

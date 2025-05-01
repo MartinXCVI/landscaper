@@ -9,7 +9,9 @@
       </figure>
       <div class="home-intro-box" data-aos="zoom-in-out" data-aos-duration="2000">
         <h2 class="title">With beauty comes inspration</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque hic minima ipsa blanditiis. Sint amet inventore consectetur cum sequi nihil mollitia. Inventore doloribus autem obcaecati voluptatibus quas ut molestiae harum suscipit vero et! Saepe, nemo?</p>
+        <p>
+          We believe outdoor spaces should stir emotion and elevate everyday life. Through balance, texture, and thoughtful structure, we transform ordinary landscapes into places that inspire — peaceful gardens, refined patios, and timeless walkways designed with care and precision.
+        </p>
       </div>
       <figure class="separator-fig" data-aos="zoom-out" data-aos-duration="1500">
         <img class="image" src="/icons/separator.png" alt="">
@@ -27,8 +29,8 @@
         </figure>
         <section class="article-container">
           <article data-aos="fade-down" data-aos-duration="1500">
-            <h2 class="subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, praesentium?</h2>
-            <p class="text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, repudiandae. Voluptate tempora minus laudantium itaque, velit consequatur magni, expedita deleniti inventore fugiat, ea nihil voluptatibus.</p>
+            <h2 class="subtitle">Crafting spaces that feel natural, yet intentional</h2>
+            <p class="text-grey">Our work blends artistry and structure, creating outdoor spaces that are both elegant and enduring. From clean lines to soft organic forms, every project is tailored to reflect the client’s vision and the landscape’s unique character.</p>
             <a href="/about" class="text-black">Learn more <i class="fa-solid fa-angles-right learn-icon"></i></a>
           </article>
         </section>
@@ -36,11 +38,11 @@
 
       <section class="home-second-column">
         <section class="article-container">
-          <h2 class="subtitle" data-aos="fade-right" data-aos-duration="1500">Lorem ipsum dolor, sit amet consectetur adipisicing elit</h2>
+          <h2 class="subtitle" data-aos="fade-right" data-aos-duration="1500">Design rooted in experience, shaped by passion</h2>
           <article>
             <div class="article-box" data-aos="fade-up" data-aos-duration="1500">
-              <h3 class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, praesentium?</h3>
-              <p class="text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, repudiandae. Voluptate tempora minus laudantium itaque, velit consequatur magni, expedita deleniti inventore fugiat, ea nihil voluptatibus.</p>
+              <h3 class="">Every element has purpose — every detail tells a story</h3>
+              <p class="text-grey">We approach landscaping with the eye of a designer and the hands of a craftsman. Whether sculpting terrain or laying fine stonework, our process honors precision, quality, and a deep respect for nature’s flow.</p>
               <a href="/about" class="text-black">Learn more <i class="fa-solid fa-angles-right learn-icon"></i></a>
             </div>
             <div class="article-card" data-aos="fade-up" data-aos-duration="1500">

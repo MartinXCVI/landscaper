@@ -1,7 +1,7 @@
 <template>
   <section class="slider-section over-x">
     <article class="slider-article" data-aos="fade-right" data-aos-duration="2000">
-      <h2 class="subtitle capital">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+      <h2 class="subtitle capital">Elevating landscapes with artistry and intention</h2>
       <div class="line"></div>
       <p>At Green Horizon Landscaping, we design and build outdoor spaces that are both beautiful and practical. From elegant patios and custom walkways to vibrant gardens and low-maintenance lawns, we shape landscapes that match your lifestyle and vision.</p>
       <p>Our expert team combines creativity with craftsmanship to deliver lasting results. Whether you’re starting fresh or upgrading an existing space, we work closely with you to bring your ideas to life.</p>
